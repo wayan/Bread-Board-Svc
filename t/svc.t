@@ -8,7 +8,9 @@ use Scalar::Util qw(refaddr);
 
 BEGIN { use_ok( "Bread::Board::Svc", "svc", "svc_singleton" ) }
 
-package MY::Class {
+{
+
+    package MY::Class;
 
     sub new {
         my $class = shift;
